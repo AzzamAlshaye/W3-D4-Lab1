@@ -45,6 +45,15 @@ a {
   border-color: #2a8bcc; /* Match the darker shade */
   color: #fff;
 }
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  background-color: #7651ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Custom Text Colors */
 .custom-text-purple {
