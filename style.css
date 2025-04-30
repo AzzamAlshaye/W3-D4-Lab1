@@ -60,6 +60,15 @@ footer a.text-muted:hover {
 }
 
 /* --- Add more custom styles below --- */
+.form-control:focus {
+  box-shadow: 0 0 0 0.02rem rgba(128, 0, 128, 0.25);
+
+  border-color: #80008063;
+}
+.input-group-text {
+  /* Make icon slightly transparent */
+  color: #6c757d;
+}
 
 /* Example: Style for Icon Placeholders in "Learn" section */
 .card .mb-3[IconPlaceholder] {
