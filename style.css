@@ -7,6 +7,9 @@ body {
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Default Bootstrap 5 font stack */
 }
+a {
+  text-decoration: none;
+}
 
 /* Custom Button Colors */
 .custom-btn-green {
