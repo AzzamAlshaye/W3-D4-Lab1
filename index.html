@@ -66,6 +66,7 @@
                   aria-expanded="false"
                   >Browse</a
                 >
+
                 <ul class="dropdown-menu" aria-labelledby="browseDropdown">
                   <li><a class="dropdown-item" href="#">Web Development</a></li>
                   <li><a class="dropdown-item" href="#">Design</a></li>
@@ -90,6 +91,7 @@
                   aria-expanded="false"
                   >Landings</a
                 >
+
                 <ul class="dropdown-menu" aria-labelledby="landingDropdown">
                   <li>
                     <a class="dropdown-item disabled" href="#">LANDINGS</a>
@@ -286,8 +288,9 @@
             </form>
 
             <!-- Buttons -->
+            <!-- Top layout: shown only on lg and larger screens -->
             <div
-              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center mt-3 mt-lg-0 ms-lg-auto gap-2"
+              class="d-none d-lg-flex flex-column flex-sm-row align-items-start align-items-lg-center mt-3 mt-lg-0 ms-lg-auto gap-2"
             >
               <button
                 class="btn btn-light rounded-circle d-flex justify-content-center align-items-center"
@@ -295,8 +298,29 @@
               >
                 <i class="bi bi-sun-fill"></i>
               </button>
-              <a href="#" class="btn btn-outline-secondary">Sign In</a>
-              <a href="#" class="btn text-white custom-btn-purple">Sign Up</a>
+              <div>
+                <a href="#" class="btn btn-outline-secondary">Sign In</a>
+                <a href="#" class="btn text-white custom-btn-purple">Sign Up</a>
+              </div>
+            </div>
+
+            <!-- Mobile layout: shown only on screens smaller than lg -->
+            <div
+              class="d-flex d-lg-none justify-content-between align-items-center w-100 mt-3 mt-lg-0"
+            >
+              <!-- Left side: Sun button -->
+              <button
+                class="btn btn-light rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                <i class="bi bi-sun-fill"></i>
+              </button>
+
+              <!-- Right side: Sign In / Sign Up -->
+              <div>
+                <a href="#" class="btn btn-outline-secondary">Sign In</a>
+                <a href="#" class="btn text-white custom-btn-purple">Sign Up</a>
+              </div>
             </div>
           </div>
         </div>
