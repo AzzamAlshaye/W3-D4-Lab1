@@ -26,35 +26,47 @@
   <body>
     <section>
       <nav
-        class="navbar navbar-default navbar-expand-lg shadow-sm p-2 py-2 mb-5 rounded"
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-2 rounded mb-4"
       >
-        <button
-          aria-controls="basic-navbar-nav"
-          type="button"
-          aria-label="Toggle navigation"
-          class="navbar-toggler collapsed"
-        >
-          <span class="icon-bar top-bar mt-0"></span
-          ><span class="icon-bar middle-bar"></span
-          ><span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="container-fluid m-1 gap-4">
-          <img src="./images/logo.svg" alt="geeks logo" />
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand fw-bold" href="#">
+            <img
+              src="./images/logo.svg"
+              alt="geeks logo"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+          </a>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav gap-2 fw-semibold">
-              <!-- dropdown 1 -->
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav flex-column flex-lg-row gap-lg-2 fw-semibold">
+              <!-- Dropdown: Browse -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
+                  id="browseDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Browse</a
                 >
-                  Browse
-                </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="browseDropdown">
                   <li><a class="dropdown-item" href="#">Web Development</a></li>
                   <li><a class="dropdown-item" href="#">Design</a></li>
                   <li><a class="dropdown-item" href="#">Mobile App</a></li>
@@ -66,19 +78,19 @@
                   <li><a class="dropdown-item" href="#">Photography</a></li>
                 </ul>
               </li>
-              <!-- dropdown 1 -->
-              <!-- dropdown 2 -->
+
+              <!-- Dropdown: Landings -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
+                  id="landingDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Landings</a
                 >
-                  Landing
-                </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="landingDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -87,19 +99,19 @@
                   </li>
                 </ul>
               </li>
-              <!-- dropdown 2 -->
-              <!-- dropdown 3 -->
+
+              <!-- Dropdown: Pages -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
+                  id="pagesDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Pages</a
                 >
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -108,18 +120,19 @@
                   </li>
                 </ul>
               </li>
-              <!-- dropdown 3 -->
+
+              <!-- Dropdown: Accounts -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
+                  id="accountsDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Accounts</a
                 >
-                  Accounts
-                </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -128,19 +141,19 @@
                   </li>
                 </ul>
               </li>
-              <!-- dropdown 3 -->
-              <!-- dropdown 4 -->
+
+              <!-- Dropdown: ... -->
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link fw-bold px-2"
+                  class="nav-link dropdown-toggle"
                   href="#"
+                  id="moreDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >...</a
                 >
-                  ...
-                </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -149,54 +162,36 @@
                   </li>
                 </ul>
               </li>
-              <!-- dropdown 4 -->
             </ul>
-            <form
-              class="d-flex mt-lg-0 ms-lg-4 align-items-center position-relative"
-              role="search"
-            >
+
+            <!-- Search -->
+            <form class="d-flex mt-3 mt-lg-0 ms-lg-3 position-relative">
               <i
                 class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"
                 style="font-size: 0.8rem"
               ></i>
-
               <input
-                type="text"
-                class="form-control border-1 ps-5"
+                class="form-control ps-5"
+                type="search"
                 placeholder="Search Courses"
-                aria-label="Search Courses"
+                aria-label="Search"
               />
             </form>
-            <div
-              class="navbar-nav navbar-right-wrap ms-auto d-flex align-items-center"
-            >
-              <div class="ms-2 dropdown">
-                <a
-                  href="#"
-                  class="btn btn-light btn-icon rounded-circle d-flex align-items-center justify-content-center"
-                  role="button"
-                  aria-expanded="false"
-                  style="width: 40px; height: 40px"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
 
-              <a href="#" class="btn btn-light ms-2">Sign In</a>
+            <!-- Buttons -->
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center mt-3 mt-lg-0 ms-lg-auto gap-2"
+            >
+              <button
+                class="btn btn-light rounded-circle d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                <i class="bi bi-sun-fill"></i>
+              </button>
+              <a href="#" class="btn btn-light">Sign In</a>
               <a
                 href="#"
-                class="btn text-white ms-2"
+                class="btn text-white"
                 style="background-color: #754ffe"
                 >Sign Up</a
               >
