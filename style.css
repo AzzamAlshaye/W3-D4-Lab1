@@ -1,0 +1,82 @@
+/* Import Fonts (Optional - Example using Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"); /* Example font */
+
+body {
+  /* font-family: 'Poppins', sans-serif; */ /* Uncomment to use the imported font */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Default Bootstrap 5 font stack */
+}
+
+/* Custom Button Colors */
+.custom-btn-green {
+  background-color: #198754; /* Bootstrap success green - Adjust as needed */
+  border-color: #198754; /* Adjust as needed */
+}
+.custom-btn-green:hover {
+  background-color: #157347; /* Darker green on hover */
+  border-color: #146c43;
+}
+
+.custom-btn-purple {
+  background-color: #6f42c1; /* Example purple - Adjust to match image */
+  border-color: #6f42c1;
+  color: white;
+}
+.custom-btn-purple:hover {
+  background-color: #5a349b; /* Darker purple */
+  border-color: #53308f;
+  color: white;
+}
+
+/* Custom Text Colors */
+.custom-text-purple {
+  color: #6f42c1; /* Example purple - Adjust to match image */
+}
+
+/* Custom Background Colors for Testimonials */
+.custom-bg-purple {
+  background-color: #6f42c1; /* Example purple - Adjust */
+}
+
+.custom-bg-blue {
+  background-color: #0dcaf0; /* Bootstrap info cyan/blue - Adjust */
+}
+
+/* Optional: Style Accordion Buttons */
+.accordion-button:not(.collapsed) {
+  color: #0c63e4; /* Default Bootstrap blue */
+  background-color: #e7f1ff; /* Default Bootstrap blue */
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Default Bootstrap blue focus */
+}
+
+/* Ensure footer links aren't underlined by default */
+footer a.text-muted:hover {
+  color: #495057 !important; /* Darker text on hover */
+  text-decoration: underline !important;
+}
+
+/* --- Add more custom styles below --- */
+
+/* Example: Style for Icon Placeholders in "Learn" section */
+.card .mb-3[IconPlaceholder] {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e9ecef; /* Light gray placeholder */
+  color: #6c757d;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Example: Style for the actual checkmark icons if using Bootstrap Icons */
+.list-unstyled .bi-check-circle-fill {
+  /* Already colored green via text-success */
+  vertical-align: middle; /* Align icon nicely with text */
+}
