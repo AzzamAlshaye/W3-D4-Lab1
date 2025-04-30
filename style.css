@@ -56,7 +56,15 @@ a {
 .custom-text-purple {
   color: #6f42c1;
 }
-
+.bg-light-warning {
+  opacity: 1;
+  background-color: #ffeeda !important;
+}
+.text-dark-warning {
+  opacity: 1;
+  color: rgba(194, 129, 53, 1) !important;
+  color: rgb(187, 124, 50) !important;
+}
 .custom-bg-purple {
   background-color: #6f42c1; /* Example purple - Adjust */
 }
