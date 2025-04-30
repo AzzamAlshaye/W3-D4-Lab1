@@ -80,3 +80,62 @@ footer a.text-muted:hover {
   /* Already colored green via text-success */
   vertical-align: middle; /* Align icon nicely with text */
 }
+
+/* Custom styles for footer */
+.footer-bg {
+  background-color: #f8f9fa; /* Light background, adjust as needed */
+}
+.footer-links a {
+  color: #6c757d; /* Grey color for links */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.footer-links a:hover {
+  color: #0d6efd; /* Bootstrap primary blue on hover */
+}
+.footer-bottom {
+  border-top: 1px solid #dee2e6; /* Separator line */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem; /* Smaller text */
+}
+.social-icon {
+  color: #6c757d;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+.social-icon:hover {
+  color: #0d6efd;
+}
+.app-store-btn img {
+  height: 40px; /* Adjust height as needed */
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  /* Added for better alignment if SVGs have varying aspect ratios */
+  vertical-align: middle;
+}
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1030; /* Ensure it's above other content */
+  display: flex; /* Keeps it flexible if you add buttons later */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons if more are added */
+}
+.fixed-buttons .btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn-buy-now {
+  background-color: #0d6efd; /* Blue background */
+  color: white;
+}
+.btn-buy-now:hover {
+  background-color: #0b5ed7;
+}
+/* Ensure enough padding at the bottom of the body to see footer content above fixed buttons */
+body {
+  /* Adjust padding if needed, depending on the height of the fixed button */
+  padding-bottom: 100px;
+}
