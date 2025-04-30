@@ -23,7 +23,7 @@
 
     <title>Vanilla JavaScript Developer Course</title>
   </head>
-  <body>
+  <body class="m-0 h-100">
     <section>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-2 rounded mb-4"
@@ -367,39 +367,19 @@
         <h3 class="text-muted mb-4">Trusted by</h3>
         <div class="row justify-content-center align-items-center g-4">
           <div class="col-6 col-sm-4 col-md-2">
-            <img
-              src="https://via.placeholder.com/100x40?text=Logo1"
-              class="img-fluid"
-              alt="Company Logo 1"
-            />
+            <img src="" class="img-fluid" alt="Company Logo 1" />
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <img
-              src="https://via.placeholder.com/100x40?text=Logo2"
-              class="img-fluid"
-              alt="Company Logo 2"
-            />
+            <img src="" class="img-fluid" alt="Company Logo 2" />
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <img
-              src="https://via.placeholder.com/100x40?text=Logo3"
-              class="img-fluid"
-              alt="Company Logo 3"
-            />
+            <img src="" class="img-fluid" alt="Company Logo 3" />
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <img
-              src="https://via.placeholder.com/100x40?text=Logo4"
-              class="img-fluid"
-              alt="Company Logo 4"
-            />
+            <img src="" class="img-fluid" alt="Company Logo 4" />
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <img
-              src="https://via.placeholder.com/100x40?text=Logo5"
-              class="img-fluid"
-              alt="Company Logo 5"
-            />
+            <img src="" class="img-fluid" alt="Company Logo 5" />
           </div>
         </div>
       </div>
@@ -542,37 +522,47 @@
       </div>
     </section>
 
-    <section class="py-5 text-center" style="background-color: #f0f2ff">
-      <div class="container">
-        <h2 class="fw-bold mb-3">
+    <section
+      class="d-flex align-items-center justify-content-center py-lg-5 py-4"
+      style="
+        background-image: url(https://geeks-react.netlify.app/static/media/course-graphics.171832eb5421ed89e4654944532c6886.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; /* Good practice for cover */
+        background-color: #f1f5f9;
+      "
+    >
+      <div class="container text-center">
+        <h2 class="fw-semibold mb-3 mt-3 fs-1">
           Join more than 1 million learners worldwide
         </h2>
-        <p class="text-muted mb-4">
-          Start your JavaScript journey today and unlock countless career
-          opportunities.
+        <p class="text-muted mb-1 fw-semibold fs-5 text-break text-center">
+          Effective learning starts with assessment. Learning a new skill is
+          hard work—Signal
         </p>
-        <a href="#" class="btn btn-primary btn-lg fw-bold custom-btn-purple"
-          >Get lifetime access</a
-        >
+        <p class="text-muted mb-4 fw-semibold fs-5 text-break text-center">
+          makes it easier.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a
+            href="#"
+            class="btn btn-primary btn-md fw-semibold custom-btn-purple px-4 gap-3"
+          >
+            Start learning for free
+          </a>
+          <a href="#" class="btn btn-geeks-blue btn-md fw-semibold px-4">
+            Geeks for Business
+          </a>
+        </div>
       </div>
     </section>
 
-    <div class="container" style="height: 500px">
-      <h1>Page Content</h1>
-      <p>Scroll down to see the footer.</p>
-    </div>
-
-    <footer class="footer-bg pt-5 pb-4">
+    <footer class="footer-bg pt-5 pb-5">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <h5 class="mb-3">
-              <img
-                src="https://placehold.co/30x30/6c757d/white?text=G"
-                alt="Geeks Logo Icon"
-                class="me-2 rounded-circle"
-              />
-              Geeks
+              <img src="./images/logo.svg" alt="Geeks Logo Icon" />
             </h5>
             <p class="text-muted">
               Geek is feature-rich components and beautifully Bootstrap UIKit
@@ -628,21 +618,18 @@
                 >(000) 123 456 789</a
               >
             </p>
-            <div class="mt-3">
-              <a href="#" class="app-store-btn">
-                <img
-                  src="apple.svg"
-                  alt="Download on the App Store"
-                  onerror="this.alt='App Store'; this.src='https://placehold.co/120x40/000000/ffffff?text=App+Store';"
-                />
-              </a>
-              <a href="#" class="app-store-btn">
-                <img
-                  src="google-play.svg"
-                  alt="Get it on Google Play"
-                  onerror="this.alt='Google Play'; this.src='https://placehold.co/135x40/000000/ffffff?text=Google+Play';"
-                />
-              </a>
+            <div class="mt-2">
+              <img
+                src="./images/apple.svg"
+                alt="Download on the App Store"
+                class="app-store-btn"
+              />
+
+              <img
+                class="app-store-btn"
+                src="./images/google-play.svg"
+                alt="Get it on Google Play"
+              />
             </div>
           </div>
         </div>

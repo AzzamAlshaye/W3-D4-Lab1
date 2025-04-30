@@ -28,6 +28,20 @@ body {
   border-color: #53308f;
   color: white;
 }
+.btn-geeks-blue {
+  background-color: #3ca6ec;
+  border-color: #3ca6ec;
+  color: #fff; /* Use white text for better contrast */
+}
+
+/* Define hover, focus, and active states for better UX */
+.btn-geeks-blue:hover,
+.btn-geeks-blue:focus,
+.btn-geeks-blue:active {
+  background-color: #2a8bcc; /* A slightly darker shade for interaction */
+  border-color: #2a8bcc; /* Match the darker shade */
+  color: #fff;
+}
 
 /* Custom Text Colors */
 .custom-text-purple {
@@ -117,7 +131,7 @@ footer a.text-muted:hover {
 .social-icon:hover {
   color: #0d6efd;
 }
-.app-store-btn img {
+.app-store-btn {
   height: 40px; /* Adjust height as needed */
   margin-top: 0.5rem;
   margin-right: 0.5rem;
