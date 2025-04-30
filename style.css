@@ -257,3 +257,46 @@ footer a.text-muted:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+.accordion-button {
+  font-weight: 500;
+  color: #212529;
+}
+.accordion-button::after {
+  font-family: monospace;
+  content: "+";
+  font-size: 1.25rem;
+  transition: transform 0.2s;
+  color: #7651ff;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+.custom-btn-outline-purple {
+  border: 1px solid #7651ff;
+  color: #7651ff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.custom-btn-outline-purple:hover {
+  background-color: #7651ff;
+  color: #fff;
+}
+/* 1) Hide Bootstrap’s default arrow */
+#faqAccordion .accordion-button::after {
+  background-image: none;
+}
+
+/* 2) Add your custom plus/minus */
+#faqAccordion .accordion-button::after {
+  font-family: monospace;
+  content: "+";
+  font-size: 1.25rem;
+  transition: transform 0.2s;
+  color: #7651ff;
+}
+
+#faqAccordion .accordion-button:not(.collapsed)::after {
+  content: "-";
+  transform: rotate(180deg);
+}
