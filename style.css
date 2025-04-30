@@ -237,3 +237,23 @@ footer a.text-muted:hover {
   transform: rotate(-45deg);
 }
 /* burger menu style */
+
+.testimonial-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.bg-purple {
+  background-color: #7651ff !important;
+}
+.avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
